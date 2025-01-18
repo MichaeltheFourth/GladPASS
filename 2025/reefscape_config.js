@@ -86,7 +86,7 @@ var config_data = `
       "type": "team",
       "min": 0,
       "max": 99999999999999999999999999999999999999999999999999999999999
-    },
+    }
   ],
   "teleop": [
     { "name": "Coral Scoring",
