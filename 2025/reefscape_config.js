@@ -72,52 +72,57 @@ var config_data = `
     { "name": "Coral Scoring",
       "code": "acs",
       "type": "team",
-      "min": 1,
+      "min": 0,
+      "max": 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    },
+    { "name": "Processor Scoring",
+      "code": "aps",
+      "type": "team",
+      "min": 0,
       "max": 99999999999999999999999999999999999999999999999999999999999
     },
-    { "name": "Processor Score",
-      "code": "aps",
-      "type": "counter"
-    },
-    { "name": "Processor Missed",
-      "code": "aps",
-      "type": "counter"
-    },
-    { "name": "Net Score",
+    { "name": "Net Scoring",
       "code": "ans",
-      "type": "counter"
-    }
+      "type": "team",
+      "min": 0,
+      "max": 99999999999999999999999999999999999999999999999999999999999
+    },
   ],
   "teleop": [
-    { "name": "Coral L1",
-      "code": "tc1",
-      "type": "counter"
+    { "name": "Coral Scoring",
+      "code": "tcs",
+      "type": "team",
+      "min": 0,
+      "max": 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     },
-    { "name": "Coral L2",
-      "code": "tc2",
-      "type": "counter"
-    },
-    { "name": "Coral L3",
-      "code": "tc3",
-      "type": "counter"
-    },
-    { "name": "Coral L4",
-      "code": "tc4",
-      "type": "counter"
-    },
-    { "name": "Processor Score",
+    { "name": "Processor Scoring",
       "code": "tps",
-      "type": "counter"
+      "type": "team",
+      "min": 0,
+      "max": 99999999999999999999999999999999999999999999999999999999999
     },
-    { "name": "Net Score",
+    { "name": "Net Scoring",
       "code": "tns",
-      "type": "counter"
+      "type": "team",
+      "min": 0,
+      "max": 99999999999999999999999999999999999999999999999999999999999
     },
-    { "name": "Pickup From",
-      "code": "tpu",
+    { "name": "Coral Pickup From",
+      "code": "tpuc",
       "type": "radio",
       "choices": {
         "s": "Coral Station<br>",
+        "f": "Floor<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Algae Pickup From",
+      "code": "tpua",
+      "type": "radio",
+      "choices": {
+        "s": "Reef<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
@@ -158,18 +163,6 @@ var config_data = `
         "x": "Not Observed"
       },
       "defaultValue": "x"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
       "code": "die",
