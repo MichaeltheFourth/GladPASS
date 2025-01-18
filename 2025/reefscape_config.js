@@ -69,23 +69,17 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Coral L1",
-      "code": "ac1",
-      "type": "counter"
-    },
-    { "name": "Coral L2",
-      "code": "ac2",
-      "type": "counter"
-    },
-    { "name": "Coral L3",
-      "code": "ac3",
-      "type": "counter"
-    },
-    { "name": "Coral L4",
-      "code": "ac4",
-      "type": "counter"
+    { "name": "Coral Scoring",
+      "code": "acs",
+      "type": "team",
+      "min": 1,
+      "max": 99999999999999999999999999999999999999999999999999999999999
     },
     { "name": "Processor Score",
+      "code": "aps",
+      "type": "counter"
+    },
+    { "name": "Processor Missed",
       "code": "aps",
       "type": "counter"
     },
@@ -136,10 +130,6 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Barge Timer",
-      "code": "ebt",
-      "type": "timer"
-    },
     { "name": "Final Robot Status",
       "code": "efs",
       "type":"radio",
@@ -158,13 +148,6 @@ var config_data = `
       "code": "cop",
       "type": "bool"
     },
-    { "name": "Algae Left in Reef",
-      "code": "alr",
-      "type": "number",
-      "min": 0,
-      "max": 9,
-      "defaultValue": 0
-    },
     { "name": "Driver Skill",
       "code": "ds",
       "type": "radio",
@@ -173,18 +156,6 @@ var config_data = `
         "a": "Average<br>",
         "v": "Very Effective<br>",
         "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Defense Rating",
-      "code": "dr",
-      "type": "radio",
-      "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
       },
       "defaultValue": "x"
     },
@@ -202,18 +173,6 @@ var config_data = `
     },
     { "name": "Died/Immobilized",
       "code": "die",
-      "type": "bool"
-    },
-    { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Coral (>2)",
-      "code": "dc",
-      "type": "bool"
-    },
-    { "name": "Dropped Algae (>2)",
-      "code": "da",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
