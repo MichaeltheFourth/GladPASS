@@ -1,8 +1,8 @@
 <div id="top"></div>
 
-# Scouting P.A.S.S.
+# Glad P.A.S.S.
 
-#### A scouting system for FIRST FRC competitions developed by [PWNAGE - Team #2451](https://pwnagerobotics.org).
+#### A scouting system for FIRST FRC competitions developed by [PWNAGE - Team #2451](https://pwnagerobotics.org), adapted by Team #888
 
 <a href="https://PWNAGERobotics.github.io/ScoutingPASS">Live Demo</a> . <a href="https://PWNAGERobotics.github.io/ScoutingPASS/pit.html">Pit Scouting</a> . <a href="#getting-started">Getting Started</a> . <a href="#faq">FAQ</a>
 
