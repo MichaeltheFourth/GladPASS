@@ -113,6 +113,12 @@ var config_data = `
       "min": 0,
       "max": 99999999999999999999999999999999999999999999999999999999999
     },
+    { "name": "Net Missed",
+      "code": "tnm",
+      "type": "team",
+      "min": 0,
+      "max": 99999999999999999999999999999999999999999999999999999999999
+    },
     { "name": "Coral Pickup From",
       "code": "tpuc",
       "type": "radio",
