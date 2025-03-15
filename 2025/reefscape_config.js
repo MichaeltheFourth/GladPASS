@@ -176,6 +176,18 @@ var config_data = `
       },
       "defaultValue": "x"
     },
+    { "name": "Defense",
+      "code": "def",
+      "type": "radio",
+      "choices": {
+        "1": "Did little to slow down opposing teams; unable to keep up<br>",
+        "2": "Slowed down the scoring the opposing teams a little bit<br>",
+        "3": "Did a moderate job slowing down the opposing team<br>",
+        "4": "Did an extremely good job slowing down the opposing team<br>",
+        "0": "Not Observed"
+      },
+      "defaultValue": "0"
+    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
